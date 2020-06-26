@@ -11,7 +11,7 @@ workflows:
     scripts:
       - cd $FCI_BUILD_DIR
       - pwd
-      - ./gradlew assembleDebug
+      - ./gradlew assembleDebug --stacktrace
     artifacts:
       - $FCI_BUILD_DIR/app/build/outputs/apk/debug/*.apk
       - $FCI_BUILD_DIR/build/**/outputs/**/*.aab
