@@ -13,10 +13,7 @@ workflows:
       - pwd
       - |
         # set up local properties
-        echo "flutter.sdk=$HOME/programs/flutter" > "$FCI_BUILD_DIR/flutter_tatasky_app/.android/local.properties"
-        - cd flutter_tatasky_app && flutter packages pub get
-        - flutter test
-        - cd $FCI_BUILD_DIR && ./gradlew assembleRelease
+      - ./gradlew assembleRelease
     artifacts:
       - $FCI_BUILD_DIR/app/build/outputs/apk/debug/*.apk
       - $FCI_BUILD_DIR/build/**/outputs/**/*.aab
