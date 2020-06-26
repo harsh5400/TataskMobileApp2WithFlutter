@@ -11,11 +11,13 @@ workflows:
     scripts:
       - cd $FCI_BUILD_DIR
       - pwd
-      - ./gradlew assembleDebug
+      - echo "flutter.sdk=$HOME/programs/flutter" > "$FCI_BUILD_DIR/name_of_module/.android/local.properties"
+        cd $FCI_BUILD_DIR/nameOfAndroidFolder && ./gradlew assembleDebug
     artifacts:
       - $FCI_BUILD_DIR/app/build/outputs/apk/debug/*.apk
       - $FCI_BUILD_DIR/build/**/outputs/**/*.aab
       - $FCI_BUILD_DIR/build/**/outputs/**/mapping.txt
+      - $FCI_BUILD_DIR/app/build/**/outputs/**/*.apk
     publishing:
       email:
         recipients:
