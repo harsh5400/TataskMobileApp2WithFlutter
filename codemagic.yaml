@@ -14,7 +14,6 @@ workflows:
 
       - echo "flutter.sdk=$HOME/programs/flutter" > "flutter_tatasky_app/.android/local.properties"
       - cd $FCI_BUILD_DIR/flutter_tatasky_app && flutter packages pub get
-      - cd $FCI_BUILD_DIR/flutter_tatasky_app && flutter test
       - cd $FCI_BUILD_DIR && ./gradlew assembleRelease
 
     artifacts:
