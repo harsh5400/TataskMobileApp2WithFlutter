@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1077135513349",
+    "firebase_url": "https://tataskybinge-c680a.firebaseio.com",
+    "project_id": "tataskybinge-c680a",
+    "storage_bucket": "tataskybinge-c680a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1077135513349:android:0f1ba4a6b7c67a3180896c",
+        "android_client_info": {
+          "package_name": "com.harsh.tataskybinge"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1077135513349-59abl9tl47hit78aj437ngiecmknajhl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdgLHmYi_ZFaeAaGSB6oUnOOq1oy5KrV8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1077135513349-59abl9tl47hit78aj437ngiecmknajhl.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1077135513349-69utouk1oo9jlm09gtubr1ab4t3k5j67.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.harsh.tataskybinge"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
