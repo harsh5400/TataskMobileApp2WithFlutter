@@ -11,7 +11,7 @@ workflows:
     scripts:
       - cd $FCI_BUILD_DIR
       - pwd
-      - echo "flutter.sdk=$HOME/programs/flutter" > "$FCI_BUILD_DIR/name_of_module/.android/local.properties"
+      - echo "flutter.sdk=$HOME/programs/flutter" > "$FCI_BUILD_DIR/flutter_tatasky_app/.android/local.properties"
         cd $FCI_BUILD_DIR/nameOfAndroidFolder && ./gradlew assembleDebug
     artifacts:
       - $FCI_BUILD_DIR/app/build/outputs/apk/debug/*.apk
