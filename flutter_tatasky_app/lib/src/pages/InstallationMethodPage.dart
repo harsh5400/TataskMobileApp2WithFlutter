@@ -66,7 +66,7 @@ class _InstallationMethodPageState extends State<InstallationMethodPage> {
                     context,
                     MaterialPageRoute(
                         builder: (BuildContext context) =>
-                            ConformYourAddressPage()));
+                            ConformYourAddressPage(isDIY:true)));
               }),
               InkWell(
                 onTap: () {

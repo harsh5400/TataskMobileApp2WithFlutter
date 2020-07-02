@@ -12,6 +12,11 @@ import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 import '../../Custom_DialogWidget.dart';
 
 class ConformYourAddressPage extends StatefulWidget {
+
+bool isDIY;
+
+ConformYourAddressPage({this.isDIY:false});
+
   @override
   _ConformYourAddressPageState createState() => _ConformYourAddressPageState();
 }
@@ -32,7 +37,7 @@ class _ConformYourAddressPageState extends State<ConformYourAddressPage>
   gotoSchedulePage() {
     _controller.animateToPage(
       1,
-      duration: Duration(milliseconds: 800),
+      duration: Duration(milliseconds: 300),
       curve: Curves.easeIn,
     );
   }
@@ -223,7 +228,7 @@ class _ConformYourAddressPageState extends State<ConformYourAddressPage>
                   context, "Proceed", HexColor("#5991c9"), height: 48, width: 300,
                   ontap: () {
 
-                    gotoSchedulePage();
+                    this.widget.isDIY ? DialogHelperThankyou.exit(context) : gotoSchedulePage();
               
               }),
             ),
