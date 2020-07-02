@@ -37,7 +37,7 @@ class AppWidget extends StatelessWidget {
          children: <Widget>[
            MyWidgets.userCircularImageNetwork(image.imagePath),
            SizedBox(height:5.0),
-           Expanded(child: Text(image.title, style: Theme.of(context).textTheme.subtitle))
+           Expanded(child: Text(image.title, style: Theme.of(context).textTheme.subtitle2))
          ],
        ),
          );

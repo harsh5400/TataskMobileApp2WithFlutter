@@ -14,15 +14,18 @@ class SubscriptionAppModel{
 
 class SubscriptionPlanModel
 {
-  String planName ;
-  bool isSelected ;
+  String planName = '' ;
+  bool isSelected  ;
   String planDescription ;
   String planPrice ;
   String planPriceDescrition ;
   int type;
+  String planPriceOnly;
+  String planNameOnly;
+  int totalApp;
 
 
-SubscriptionPlanModel({this.planName = '', this.isSelected = false, this.planDescription = '', this.planPrice = '', this.planPriceDescrition = '', this.type=1});
+SubscriptionPlanModel({this.planName = '', this.isSelected = false, this.planDescription = '', this.planPrice = '', this.planPriceDescrition = '', this.type=1, this.planNameOnly ='', this.planPriceOnly  = '', this.totalApp = 0});
 }
 
  List<SubscriptionAppModel>  subscriptionApp=[  
@@ -56,3 +59,47 @@ SubscriptionPlanModel({this.planName = '', this.isSelected = false, this.planDes
     title: 'Hotstar'),
         
     ];
+
+
+/// installation  method class
+
+ 
+class InstallationMethod{
+  
+  String description;
+  String title;
+  String helpertext;
+  bool isSelected;
+  InstallationMethod(
+    {
+    this.description='',
+   this .isSelected=false,
+    this.title='',
+    this.helpertext = ''
+    });   
+}
+
+
+
+
+
+ List<InstallationMethod>  installationMethod=[  
+
+    InstallationMethod( description:'you device will be shipped to your address with installation guide for self-installation. Recommended for contactless installation',
+   
+    title: 'Do it yourself',
+    helpertext: "You can either do it yourself or we can send\n our installer to your address"
+    
+     ),
+     InstallationMethod(
+    description:"Our agent with visit your address and do the installation for you. Recommended for people not comfortable with self installation",
+   
+    title: 'Installer Required',
+     helpertext: "You can do it yourself or we can send\n our installer to your address",
+     
+     
+     ),
+     
+        
+    ];
+

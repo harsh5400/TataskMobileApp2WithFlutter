@@ -19,7 +19,7 @@ class SubscriptionDetailPage extends StatelessWidget {
       backgroundColor:Theme.of(context).scaffoldBackgroundColor,
       appBar: AppBar(
         elevation: 0.0,
-        title:Text(this.subscriptionAppModel.title ,style:Theme.of(context).textTheme.title)),
+        title:Text(this.subscriptionAppModel.title ,style:Theme.of(context).textTheme.headline6)),
       body: ListView(
      
         children:<Widget>[
@@ -42,11 +42,11 @@ class SubscriptionDetailPage extends StatelessWidget {
             children: <Widget>[
               Row(
                 children:<Widget>[
-                  Text(this.subscriptionAppModel.title, style: Theme.of(context).textTheme.body1),
+                  Text(this.subscriptionAppModel.title, style: Theme.of(context).textTheme.bodyText2),
                   SizedBox(width:10),
-                  Text("|", style: Theme.of(context).textTheme.title),
+                  Text("|", style: Theme.of(context).textTheme.headline6),
                    SizedBox(width:10),
-                    Text("Not Subscribed", style: Theme.of(context).textTheme.body1),
+                    Text("Not Subscribed", style: Theme.of(context).textTheme.bodyText2),
                 ]
               ),
               SizedBox(height:10),

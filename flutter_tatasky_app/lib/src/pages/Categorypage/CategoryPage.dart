@@ -15,7 +15,7 @@ class _CategoryPageState extends State<CategoryPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Theme.of(context).scaffoldBackgroundColor,
-      appBar: AppBar(title:Text("Categories", style:Theme.of(context).textTheme.title)),
+      appBar: AppBar(title:Text("Categories", style:Theme.of(context).textTheme.headline6)),
       body: StreamBuilder(
         initialData: List<MovieCategory>(),
         stream: widget.movieCategories,

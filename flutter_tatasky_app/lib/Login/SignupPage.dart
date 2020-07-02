@@ -45,7 +45,7 @@ class SignupPage extends StatelessWidget {
                               padding: const EdgeInsets.only(left: 40.0),
                               child: new Text(
                                 "USER NAME",
-                             style: AppTheme.textTheme.title.apply(color: AppTheme.buildLightTheme().primaryColor),
+                             style: AppTheme.textTheme.headline6.apply(color: AppTheme.buildLightTheme().primaryColor),
                               ),
                             ),
                           ),
@@ -94,7 +94,7 @@ class SignupPage extends StatelessWidget {
                               padding: const EdgeInsets.only(left: 40.0),
                               child: new Text(
                                 "EMAIL",
-                               style: AppTheme.textTheme.title.apply(color: AppTheme.buildLightTheme().primaryColor),
+                               style: AppTheme.textTheme.headline6.apply(color: AppTheme.buildLightTheme().primaryColor),
                               ),
                             ),
                           ),
@@ -140,7 +140,7 @@ class SignupPage extends StatelessWidget {
                               padding: const EdgeInsets.only(left: 40.0),
                               child: new Text(
                                 "Mobile No",
-                                 style: AppTheme.textTheme.title.apply(color: AppTheme.buildLightTheme().primaryColor),
+                                 style: AppTheme.textTheme.headline6.apply(color: AppTheme.buildLightTheme().primaryColor),
                               ),
                             ),
                           ),
@@ -187,7 +187,7 @@ class SignupPage extends StatelessWidget {
                               padding: const EdgeInsets.only(left: 40.0),
                               child:  Text(
                                 "PASSWORD",
-                               style: AppTheme.textTheme.title.apply(color: AppTheme.buildLightTheme().primaryColor),
+                               style: AppTheme.textTheme.headline6.apply(color: AppTheme.buildLightTheme().primaryColor),
                               ),
                             ),
                           ),
@@ -233,7 +233,7 @@ class SignupPage extends StatelessWidget {
                               padding: const EdgeInsets.only(left: 40.0),
                               child:  Text(
                                 "CONFIRM PASSWORD",
-                              style: AppTheme.textTheme.title.apply(color: AppTheme.buildLightTheme().primaryColor),
+                              style: AppTheme.textTheme.headline6.apply(color: AppTheme.buildLightTheme().primaryColor),
                               ),
                             ),
                           ),
@@ -280,7 +280,7 @@ class SignupPage extends StatelessWidget {
                 child: new FlatButton(
                   child: new Text(
                     "Already have an account?",
-                   style: AppTheme.textTheme.title.apply(color: AppTheme.buildLightTheme().primaryColor),
+                   style: AppTheme.textTheme.headline6.apply(color: AppTheme.buildLightTheme().primaryColor),
                     textAlign: TextAlign.end,
                   ),
                   onPressed: ()  {
@@ -324,7 +324,7 @@ class SignupPage extends StatelessWidget {
                                     child: Text(
                                       "SIGN UP",
                                       textAlign: TextAlign.center,
-                                       style: AppTheme.textTheme.title.apply(color: AppTheme.buildLightTheme().indicatorColor),
+                                       style: AppTheme.textTheme.headline6.apply(color: AppTheme.buildLightTheme().indicatorColor),
                                     ),
                                   ),
                                 ],

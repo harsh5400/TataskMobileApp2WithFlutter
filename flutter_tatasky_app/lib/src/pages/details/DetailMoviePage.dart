@@ -183,13 +183,13 @@ class _DetailsMoviePageState extends State<DetailsMoviePage> with TickerProvider
                             children: <Widget>[
                               Text(
                                 widget.movie.title.toUpperCase(),
-                                style: Theme.of(context).textTheme.title,
+                                style: Theme.of(context).textTheme.headline6,
                                 textAlign: TextAlign.center,
                               ),
                               SizedBox(height: 10.0),
                               Text(
                                 widget.movie.categories + " | "  + widget.movie.year + " | " + widget.movie.country,
-                                style: Theme.of(context).textTheme.subtitle,
+                                style: Theme.of(context).textTheme.subtitle2,
                               ),
                               SizedBox(height: 20.0),
                               
@@ -203,7 +203,7 @@ class _DetailsMoviePageState extends State<DetailsMoviePage> with TickerProvider
                                 child: SingleChildScrollView(
                                   child: Text(
                                     widget.movie.description,
-                                    style:Theme.of(context).textTheme.body2,
+                                    style:Theme.of(context).textTheme.bodyText1,
                                   ),
                                 ),
                               ),

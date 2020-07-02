@@ -40,7 +40,7 @@ class GenereAndLanguageWidget extends StatelessWidget {
                               height: 80.0,
                               
                                 alignment: Alignment.center,
-                              child: title=='Browse by Language'?Text(genreLanguage.languagetitle,style:Theme.of(context).textTheme.body2,):Icon(Icons.center_focus_strong, color: AppTheme.white,),
+                              child: title=='Browse by Language'?Text(genreLanguage.languagetitle,style:Theme.of(context).textTheme.bodyText1,):Icon(Icons.center_focus_strong, color: AppTheme.white,),
                               decoration: BoxDecoration(
                                   shape: BoxShape.circle,
                                    boxShadow: [
@@ -56,7 +56,7 @@ class GenereAndLanguageWidget extends StatelessWidget {
                               ),
                       ),
                             SizedBox(height:4.0),
-                           title== 'Browse by Language'?Text(genreLanguage.languagesubtitle,style: Theme.of(context).textTheme.subtitle,):Text(genreLanguage.genresubtitle,style: Theme.of(context).textTheme.subtitle)
+                           title== 'Browse by Language'?Text(genreLanguage.languagesubtitle,style: Theme.of(context).textTheme.subtitle2,):Text(genreLanguage.genresubtitle,style: Theme.of(context).textTheme.subtitle2)
                     ],
                   ),
                 );

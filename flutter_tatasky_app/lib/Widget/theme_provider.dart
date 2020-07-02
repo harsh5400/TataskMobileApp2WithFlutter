@@ -32,7 +32,7 @@ class AppTheme {
     
     appBarTheme: AppBarTheme(
       color: Colors.white,
-     textTheme: (TextTheme(title: TextStyle(color: Colors.pink, fontSize: 20, fontWeight: FontWeight.bold))),
+     textTheme: (TextTheme(headline6: TextStyle(color: Colors.pink, fontSize: 20, fontWeight: FontWeight.bold))),
       iconTheme: IconThemeData(
         color: Colors.black,
       ),
@@ -92,12 +92,12 @@ class AppTheme {
 
   static  TextTheme textTheme(Color color) =>
    TextTheme(
-    display1: display1,
-    headline: headline,
-    title: title.apply(color:color),
-    subtitle: subtitle.apply(color:color),
-    body2: body2.apply(color:color),
-    body1: body1.apply(color:color),
+    headline4: display1,
+    headline5: headline,
+    headline6: title.apply(color:color),
+    subtitle2: subtitle.apply(color:color),
+    bodyText2: body2.apply(color:color),
+    bodyText1: body1.apply(color:color),
     caption: caption.apply(color:color),
   );
 

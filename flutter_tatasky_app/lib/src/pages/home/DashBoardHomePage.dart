@@ -119,7 +119,7 @@ class _DashBoardHomePageState extends State<DashBoardHomePage> {
           ContinueWatchingVideoWidget(title: "Continue Watching",),
           SizedBox(height: 5.0),
           VerticalMovieWidge(
-              title: 'Show We Love1',
+              title: 'Show We Love',
               listMovieFlux: _movieBloc.listMoviesPopularFlux),
           SizedBox(height: 20.0),
 
@@ -251,8 +251,7 @@ class _DashBoardHomePageState extends State<DashBoardHomePage> {
                  context,
                   MaterialPageRoute(
                    builder: (_) => SubscriptionActiveAppPage(
-                  //  movieCategories:_movieBloc.movieCategoryStream,
-                   )));
+)));
                },
                child: ListTile(
                 leading: Icon(
@@ -330,7 +329,7 @@ class _DashBoardHomePageState extends State<DashBoardHomePage> {
         Container(
          
           height: 120,
-          margin: EdgeInsets.only(top:_height -400),
+          margin: EdgeInsets.only(top:_height -500),
           decoration: BoxDecoration(
             gradient: LinearGradient(
                 begin: Alignment.topCenter,
@@ -466,7 +465,7 @@ class _DashBoardHomePageState extends State<DashBoardHomePage> {
       body: Padding(
         padding: const EdgeInsets.all(10.0),
         child: TextFormField(
-          style: Theme.of(context).textTheme.body2,
+          style: Theme.of(context).textTheme.bodyText1,
           
           decoration: InputDecoration(
           

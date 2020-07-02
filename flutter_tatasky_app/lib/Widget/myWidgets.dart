@@ -1124,22 +1124,8 @@ padding: EdgeInsets.all(8.0),
 );
    }    
 
-static Widget heading(context, String title, {Function onTap, bool hideSeeAll = false}){
-  var width  = hideSeeAll? MediaQuery.of(context).size.width - 50 :   MediaQuery.of(context).size.width/1.5;
-  return Column(
-    crossAxisAlignment: CrossAxisAlignment.start,
-    children:[
-
-    Padding(
-           padding: EdgeInsets.symmetric(horizontal: 15.0),
-            child: Text(title, style: Theme.of(context).textTheme.title),
-          ),
-          Padding(
-            padding: EdgeInsets.symmetric(horizontal: 15.0, vertical: hideSeeAll ? 6 : 0),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: <Widget>[
-                Container(
+static Widget headrline(width){
+  return Container(
                   height:1.5,
                   width: width,
                   decoration: BoxDecoration(
@@ -1158,8 +1144,26 @@ static Widget heading(context, String title, {Function onTap, bool hideSeeAll = 
           ],
         ),
                   ),
-                ),
-                    
+                );
+}
+
+static Widget heading(context, String title, {Function onTap, bool hideSeeAll = false}){
+  var width  = hideSeeAll? MediaQuery.of(context).size.width - 50 :   MediaQuery.of(context).size.width/1.5;
+  return Column(
+    crossAxisAlignment: CrossAxisAlignment.start,
+    children:[
+
+    Padding(
+           padding: EdgeInsets.symmetric(horizontal: 15.0),
+            child: Text(title, style: Theme.of(context).textTheme.headline6),
+          ),
+          Padding(
+            padding: EdgeInsets.symmetric(horizontal: 15.0, vertical: hideSeeAll ? 6 : 0),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: <Widget>[
+                //header line
+                    headrline(width),
                 Visibility(
                   visible: !hideSeeAll,
                   child: InkResponse(
@@ -1505,12 +1509,26 @@ static Widget roundedRectButton(
                 child:  Text(
                   title,
                   textAlign: TextAlign.center,
-                  style:AppTheme.textTheme.subtitle.apply(color: textColor),
+                  style:AppTheme.textTheme.subtitle2.apply(color: textColor),
                 ),
               
             );
 
  }
 
+
+
+ 
+
 }
+
+
+
+class MyScrollBehavior extends ScrollBehavior {
+  @override
+  Widget buildViewportChrome(BuildContext context, Widget child, AxisDirection axisDirection) {
+    return child;
+  }
+}
+
 

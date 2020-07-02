@@ -48,6 +48,10 @@ dependencies:
   provider: ^4.0.4
   smooth_page_indicator: ^0.1.5
   google_fonts: ^1.0.0
+  sticky_headers: ^0.1.8+1
+  flutter_gifimage: ^1.0.1
+  flutter_rounded_date_picker: ^1.0.4
+  
 
 
 dev_dependencies:
